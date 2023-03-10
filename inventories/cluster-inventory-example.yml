@@ -1,5 +1,9 @@
 plugin: stolostron.core.ocm_managedcluster
 cluster_groups:
+- name: google
+  label_selectors:
+  - cloud=Google
+  - name!=local-cluster
 - name: amazon
   label_selectors:
   - cloud=Amazon
